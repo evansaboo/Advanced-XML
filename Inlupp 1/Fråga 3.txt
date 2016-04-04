@@ -1,0 +1,11 @@
+element Resultat{
+for $R in distinct-values(//Regissör/@Namn)
+let $B := //Regissör[@Namn = $R]
+for $Skådis in distinct-values($B/preceding-sibling::Skådis/@Namn)
+let $S := $B/preceding-sibling::Skådis[@Namn = $Skådis]
+where count($S) > 1
+group by $R
+return element Regissör{attribute namn{$R}, attribute Land{distinct-values($B/@Land)}, attribute Födelseår{distinct-values($B/@Födelseår)},
+ for $A in $Skådis
+return element Skådis{attribute Namn{$A}, attribute Land{distinct-values($S/@Land)}}}
+}

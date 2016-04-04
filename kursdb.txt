@@ -1,0 +1,100 @@
+﻿CREATE DATABASE kursdb;
+GO
+
+USE kursdb;
+
+CREATE TABLE elev (
+  eid integer IDENTITY (1,1) NOT NULL PRIMARY KEY,
+  enamn varchar(20) NOT NULL UNIQUE,
+  kontakt XML NOT NULL
+);
+
+INSERT INTO elev (enamn, kontakt) VALUES 
+('Bo Dahl','<kontakt><tel typ="hemma">163578</tel><tel typ="mobil">073564889</tel><adress postnummer ="16102" postort="Bromma"><gata>Ahlgatan</gata><nummer>6</nummer></adress></kontakt>'),
+('Ann Stål','<kontakt><tel typ="hemma">373789</tel><tel typ="mobil">073148964</tel><adress postnummer ="16429" postort="Kista"><gata>Lindvägen</gata><nummer>3</nummer></adress></kontakt>'),
+('Ebba Ryd','<kontakt><tel typ="hemma">325305</tel><adress postnummer="16107" postort="Bromma"><gata>Ankvägen</gata><nummer>4</nummer></adress></kontakt>'),
+('Robert Ahl','<kontakt><tel typ="hemma">123435</tel><tel typ="mobil">073552491</tel><adress postnummer ="16425" postort="Kista"><gata>Ekvägen</gata><nummer>1</nummer></adress></kontakt>'),
+('Lars Holm','<kontakt><tel typ="hemma">203045</tel><adress postnummer="16966" postort="Solna"><gata>Skolgatan</gata><nummer>3</nummer></adress></kontakt>'),
+('Siw Björk','<kontakt><tel typ="hemma">452678</tel><adress postnummer="16431" postort="Kista"><gata>Bokvägen</gata><nummer>2</nummer></adress></kontakt>'),
+('Sigge Ehn','<kontakt><tel typ="hemma">245578</tel><tel typ="mobil">073691934</tel><adress postnummer ="16429" postort="Kista"><gata>Bokvägen</gata><nummer>24</nummer></adress></kontakt>'),
+('Kurt Grahn','<kontakt><tel typ="hemma">192292</tel><tel typ="mobil">073318175</tel><adress postnummer ="19735" postort="Bro"><gata>Byvägen</gata><nummer>112</nummer></adress></kontakt>'),
+('Eva Jung','<kontakt><tel typ="hemma">131187</tel><tel typ="mobil">073559185</tel><adress postnummer ="16966" postort="Solna"><gata>Storgatan</gata><nummer>5</nummer></adress></kontakt>'),
+('Lola Frid','<kontakt><tel typ="hemma">723384</tel><tel typ="mobil">073292612</tel><adress postnummer ="18754" postort="Täby"><gata>Lillgatan</gata><nummer>3</nummer></adress></kontakt>');
+
+
+CREATE TABLE kurs (
+  kurskod varchar(6) NOT NULL,
+  kursben varchar(50) NOT NULL,
+  info XML NOT NULL,
+  PRIMARY KEY (kurskod),
+  UNIQUE (kursben)
+);
+
+INSERT INTO kurs VALUES 
+('DBM1','Databasmetodik','<info><längd>2</längd><pris>2800</pris></info>'),
+('FDBD','Fysisk databasdesign','<info><längd>5</längd><pris>7200</pris></info>'),
+('Java1','Java, grundkurs','<info><längd>5</längd><pris>6700</pris></info>'),
+('Java2','Java, fortsättningskurs','<info><längd>4</längd><pris>6000</pris></info>'),
+('LDBD','Logisk databasdesign','<info><längd>4</längd><pris>6000</pris></info>'),
+('Log1','Logik','<info><längd>3</längd><pris>4500</pris></info>');
+
+CREATE TABLE lärare (
+  lid integer IDENTITY(1,1) NOT NULL ,
+  lnamn varchar(20) NOT NULL UNIQUE,
+  rum integer NOT NULL,
+  tel varchar(10) NOT NULL,
+  PRIMARY KEY (lid)
+);
+
+INSERT INTO lärare(lnamn,rum,tel) VALUES 
+('Anders Ödman',634,'151576'),
+('Bo Åkerman',604,'151526'),
+('Carl Nordin',603,'151553'),
+('Lena Svensson',605,'151556'),
+('Sofia Wilsson',622,'151585');
+
+CREATE TABLE lokal (
+  namn varchar(10) NOT NULL,
+  maxant integer NOT NULL,
+  PRIMARY KEY (namn)
+);
+
+INSERT INTO lokal VALUES ('Jupiter',12),('Orion',24),('Sirius',16),('Tellus',32);
+
+CREATE TABLE ktillf (
+  sdat date NOT NULL,
+  kurs varchar(6) NOT NULL,
+  lärare integer NOT NULL,
+  lokal varchar(10) NOT NULL,
+  PRIMARY KEY (sdat,kurs),
+  CONSTRAINT ktillf_ibfk_1 FOREIGN KEY (kurs) REFERENCES kurs (kurskod),
+  CONSTRAINT ktillf_ibfk_2 FOREIGN KEY (lärare) REFERENCES lärare (lid),
+  CONSTRAINT ktillf_ibfk_3 FOREIGN KEY (lokal) REFERENCES lokal (namn)
+);
+
+INSERT INTO ktillf VALUES ('2008-03-06','Java1',2,'Tellus'),
+('2008-04-02','DBM1',5,'Sirius'),('2008-04-16','Java2',2,'Orion'),
+('2008-04-16','Log1',3,'Jupiter'),('2008-05-06','Java1',2,'Jupiter'),
+('2008-05-06','LDBD',5,'Sirius'),('2008-05-09','FDBD',4,'Jupiter'),
+('2008-09-02','Java1',3,'Tellus'),('2008-09-02','LDBD',4,'Orion'),
+('2009-01-22','Java2',2,'Orion'),('2009-01-28','DBM1',5,'Jupiter');
+
+CREATE TABLE deltag (
+  sdat date NOT NULL,
+  kurs varchar(6) NOT NULL,
+  elev integer NOT NULL,
+  PRIMARY KEY (sdat,kurs,elev),
+  CONSTRAINT deltag_ibfk_1 FOREIGN KEY (sdat, kurs) REFERENCES ktillf (sdat, kurs),
+  CONSTRAINT deltag_ibfk_2 FOREIGN KEY (elev) REFERENCES elev (eid)
+);
+
+INSERT INTO deltag VALUES ('2008-03-06','Java1',1),('2008-04-02','DBM1',1),
+('2008-05-06','LDBD',1),('2008-09-02','Java1',1),('2008-04-02','DBM1',2),
+('2008-05-06','Java1',2),('2009-01-22','Java2',2),('2008-03-06','Java1',3),
+('2008-04-02','DBM1',3),('2009-01-28','DBM1',3),('2008-04-16','Log1',4),
+('2008-04-16','Java2',5),('2008-04-16','Log1',5),('2009-01-28','DBM1',5),
+('2008-04-16','Java2',6),('2008-05-06','Java1',6),('2008-05-09','FDBD',6),
+('2008-09-02','LDBD',6),('2008-04-16','Java2',7),('2008-05-06','LDBD',7),
+('2008-03-06','Java1',8),('2008-05-09','FDBD',8),('2008-09-02','LDBD',8),
+('2008-03-06','Java1',9),('2008-09-02','Java1',9),('2009-01-22','Java2',9),
+('2008-03-06','Java1',10),('2008-04-02','DBM1',10),('2009-01-22','Java2',10);

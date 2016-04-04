@@ -1,0 +1,7 @@
+element Resultat{
+for $F in //Film
+return element Film{attribute titel{$F/@Titel},
+for $L in distinct-values($F/Skådis/@Land)
+return element Land{attribute namn{$L},
+attribute antalskådisar{count($F/Skådis[@Land = $L])}}
+}}

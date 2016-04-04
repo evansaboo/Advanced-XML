@@ -1,0 +1,6 @@
+element Resultat{
+for $P in distinct-values(//Produktionsbolag)
+return (element Produktionsbolag{attribute namn{$P}, 
+attribute antal{count(distinct-values(//*[following-sibling::Produktionsbolag = $P]/@Namn))}
+})
+}

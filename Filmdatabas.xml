@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Filmer>
+<Filmer>
+ <Film Titel="Driven" År="2001">
+ <Skådis Namn="Burt Reynolds" Födelseår="1936" Land="USA"/>
+ <Skådis Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Skådis Namn="Kip Pardue" Födelseår="1976" Land="Canada"/>
+ <Regissör Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Produktionsbolag>Tri-Star</Produktionsbolag>
+ </Film>
+ <Film Titel="Antz" År="1998">
+ <Skådis Namn="Woody Allen" Födelseår="1935" Land="USA"/>
+ <Skådis Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Regissör Namn="Eric Darnell" Födelseår="1961" Land="Ireland"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="The Muse" År="1999">
+ <Skådis Namn="Andie MacDowell" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="Jeff Bridges" Födelseår="1949" Land="USA"/>
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Regissör Namn="Pitof" Födelseår="1970" Land="France"/>
+ <Produktionsbolag>October Films</Produktionsbolag>
+ </Film>
+ <Film Titel="End Game" År="2006">
+ <Skådis Namn="James Woods" Födelseår="1955" Land="USA"/>
+ <Skådis Namn="Cuba Gooding Jr" Födelseår="1968" Land="USA"/>
+ <Regissör Namn="Andy Cheng" Födelseår="1972" Land="China"/>
+ <Produktionsbolag>Millennium Films</Produktionsbolag>
+ </Film> 
+
+(for $K in //Skådis[following-sibling::Produktionsbolag = $P]
+return
+ <Film Titel="Picking Up the Pieces" År="2000">
+ <Skådis Namn="Woody Allen" Födelseår="1935" Land="USA"/>
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="Alfonso Arau" Födelseår="1948" Land="USA"/>
+ <Regissör Namn="Eric Darnell" Födelseår="1961" Land="Ireland"/>
+ <Produktionsbolag>Tri-Star</Produktionsbolag>
+ </Film>
+ <Film Titel="Anything Else" År="2003">
+ <Skådis Namn="Woody Allen" Födelseår="1935" Land="USA"/>
+ <Skådis Namn="Jason Biggs" Födelseår="1978" Land="USA"/>
+ <Skådis Namn="Christina Ricci" Födelseår="1980" Land="USA"/>
+ <Regissör Namn="Woody Allen" Födelseår="1935" Land="USA"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="Catwoman" År="2004">
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="Halle Berry" Födelseår="1966" Land="USA"/>
+ <Regissör Namn="Pitof" Födelseår="1970" Land="France"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="The Specialist" År="1994">
+ <Skådis Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="James Woods" Födelseår="1955" Land="USA"/>
+ <Regissör Namn="Eric Darnell" Födelseår="1961" Land="Ireland"/>
+ <Produktionsbolag>Tri-Star</Produktionsbolag>
+ </Film>
+ <Film Titel="Sliver" År="1993">
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="William Baldwin" Födelseår="1963" Land="USA"/>
+ <Skådis Namn="Tom Berenger" Födelseår="1949" Land="USA"/>
+ <Regissör Namn="Phillip Noyce" Födelseår="1950" Land="Australia"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="Last Action Hero" År="1993">
+ <Skådis Namn="Sharon Stone" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="Arnold Schwarzenegger" Födelseår="1947" Land="Austria"/>
+ <Regissör Namn="John McTiernan" Födelseår="1951" Land="USA"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="The Saint" År="1997">
+ <Skådis Namn="Val Kilmer" Födelseår="1959" Land="USA"/>
+ <Skådis Namn="Elisabeth Shue" Födelseår="1963" Land="USA"/>
+ <Regissör Namn="Phillip Noyce" Födelseår="1950" Land="Australia"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="Hide and Seek" År="2005">
+ <Skådis Namn="Robert De Niro" Födelseår="1943" Land="USA"/>
+ <Skådis Namn="Dakota Fanning" Födelseår="1994" Land="USA"/>
+ <Skådis Namn="Famke Janssen" Födelseår="1964" Land="Netherlands"/>
+ <Skådis Namn="Elisabeth Shue" Födelseår="1963" Land="USA"/>
+ <Regissör Namn="John Polson" Födelseår="1965" Land="Australia"/>
+ <Produktionsbolag>20th Century Fox</Produktionsbolag>
+ </Film> 
+
+ <Film Titel="Demolition Man" År="1993">
+ <Skådis Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Skådis Namn="Wesley Snipes" Födelseår="1962" Land="USA"/>
+ <Skådis Namn="Sandra Bullock" Födelseår="1964" Land="USA"/>
+ <Skådis Namn="Hiro Kanagawa" Födelseår="1963" Land="Japan"/>
+ <Regissör Namn="Marco Brambilla" Födelseår="1960" Land="Italy"/>
+ <Produktionsbolag>Warner Bros</Produktionsbolag>
+ </Film>
+ <Film Titel="Excess Baggage" År="1997">
+ <Skådis Namn="Alicia Silverstone" Födelseår="1976" Land="USA"/>
+ <Skådis Namn="Benicio Del Toro" Födelseår="1967" Land="Puerto Rico"/>
+ <Skådis Namn="Hiro Kanagawa" Födelseår="1963" Land="Japan"/>
+ <Regissör Namn="Marco Brambilla" Födelseår="1960" Land="Italy"/>
+ <Produktionsbolag>Warner Bros</Produktionsbolag>
+ </Film>
+ <Film Titel="The 6th Day" År="2000">
+ <Skådis Namn="Arnold Schwarzenegger" Födelseår="1947" Land="Austria"/>
+ <Skådis Namn="Hiro Kanagawa" Födelseår="1963" Land="Japan"/>
+ <Skådis Namn="Robert Duvall" Födelseår="1931" Land="USA"/>
+ <Regissör Namn="Roger Spottiswoode" Födelseår="1945" Land="Canada"/>
+ <Produktionsbolag>Phoenix Pictures</Produktionsbolag>
+ </Film>
+ <Film Titel="Cliffhanger" År="1993">
+ <Skådis Namn="Silvester Stallone" Födelseår="1946" Land="USA"/>
+ <Regissör Namn="Renny Harlin" Födelseår="1960" Land="Italy"/>
+ <Produktionsbolag>Warner Bros</Produktionsbolag>
+ </Film>
+ <Film Titel="The Kid And I" År="1993">
+ <Skådis Namn="Tom Arnold" Födelseår="1959" Land="USA"/>
+ <Skådis Namn="Arnold Schwarzenegger" Födelseår="1947" Land="Austria"/>
+ <Regissör Namn="Penelope Spheeris" Födelseår="1945" Land="USA"/>
+ <Produktionsbolag>Universal</Produktionsbolag>
+ </Film>
+ <Film Titel="True Lies" År="1994">
+ <Skådis Namn="Tom Arnold" Födelseår="1959" Land="USA"/>
+ <Skådis Namn="Jamie Lee Curtis" Födelseår="1958" Land="USA"/>
+ <Skådis Namn="Arnold Schwarzenegger" Födelseår="1947" Land="Austria"/>
+ <Skådis Namn="Eliza Dushku" Födelseår="1980" Land="USA"/>
+ <Regissör Namn="James Cameron" Födelseår="1954" Land="Canada"/>
+ <Produktionsbolag>Tri-Star</Produktionsbolag>
+ </Film>
+</Filmer> 
