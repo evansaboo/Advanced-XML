@@ -1,0 +1,16 @@
+<!ELEMENT Filmer (Film+)>
+<!ELEMENT Film (Skådis+, Regissör, Produktionsbolag)>
+<!ATTLIST Film 
+          Titel CDATA #REQUIRED
+          År CDATA #REQUIRED>
+<!ELEMENT Skådis EMPTY>
+<!ATTLIST Skådis 
+          Namn CDATA #REQUIRED
+          Födelseår CDATA #REQUIRED
+          Land CDATA #REQUIRED>
+<!ELEMENT Regissör EMPTY>
+<!ATTLIST Regissör 
+          Namn CDATA #REQUIRED
+          Födelseår CDATA #REQUIRED
+          Land CDATA #REQUIRED>
+<!ELEMENT Produktionsbolag (#PCDATA)>

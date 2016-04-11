@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="Filmer" type="FilmerType"/>
+	<complexType name="FilmerType">
+		<sequence>
+			<element name="Film" type="FilmType" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	<complexType name="FilmType">
+		<sequence>
+			<element name="Skådis" type="PersonType" minOccurs="1" maxOccurs="unbounded" />
+			<element name="Regissör" type="PersonType" minOccurs="1" maxOccurs="1" />
+			<element name="Produktionsbolag" type="string" minOccurs="1" maxOccurs="1" />
+		</sequence>
+		<attribute name="Titel" type="string" use="required" />
+		<attribute name="År" type="integer" use="required" />
+	</complexType>
+	<complexType name="PersonType">
+		<attribute name="Namn" type="string" use="required" />
+		<attribute name="Födelseår" type="integer" use="required" />
+		<attribute name="Land" type="string" use="required" />
+	</complexType>
+</schema>
