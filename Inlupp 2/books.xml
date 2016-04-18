@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Books SYSTEM "Books.dtd">
+<Books>
+<Book Title="Misty Nights" OriginalLanguage="English" Genre="Thriller">
+  <Author Name="John Craft" Email="jc@jc.com" YearOfBirth="1948" Country="England"></Author>
+  <Edition Year="1987" Price="120">
+    <Translation Language="German" Publisher="Kingsly" Price="130"></Translation>
+    <Translation Language="French" Publisher="Addison" Price="135"></Translation>
+    <Translation Language="Russian" Publisher="Addison" Price="125"></Translation>
+  </Edition>
+</Book>
+<Book Title="Archeology in Egypt" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Arnie Bastoft" Email="bastoft@frei.at" YearOfBirth="1971" Country="Austria"></Author>
+  <Author Name="Meg Gilmand" Email="megil@archeo.org" YearOfBirth="1968" Country="Australia"></Author>
+  <Author Name="Chris Ryan" Email="chris@egypt.eg" YearOfBirth="1944" Country="France"></Author>
+  <Edition Year="1992" Price="250">
+    <Translation Language="Swedish" Price="340"></Translation>
+    <Translation Language="French" Price="320"></Translation>
+  </Edition>
+  <Edition Year="1994" Price="280">
+    <Translation Language="Swedish" Publisher="KLC" Price="390"></Translation>
+    <Translation Language="French" Publisher="KLC" Price="330"></Translation>
+    <Translation Language="Chinese" Publisher="Shou-Ling" Price="280"></Translation>
+  </Edition>
+  <Edition Year="1999" Price="280">
+    <Translation Language="French" Publisher="KLC" Price="320"></Translation>
+    <Translation Language="Italian" Publisher="KLC" Price="320"></Translation>
+    <Translation Language="Turkish" Publisher="Turk And Turk" Price="300"></Translation>
+    <Translation Language="Spanish" Price="300"></Translation>
+  </Edition>
+</Book>
+<Book Title="Database Systems in Practice" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Alan Griff" Email="ag@mit.edu" YearOfBirth="1972" Country="USA"></Author>
+  <Author Name="Marty Faust" Email="marty@nyu.edu" YearOfBirth="1970" Country="USA"></Author>
+  <Author Name="Celine Biceau" Email="celine.biceau@tok.cn" YearOfBirth="1969" Country="Canada"></Author>
+  <Edition Year="2000" Price="430"></Edition>
+  <Edition Year="2002" Price="440"></Edition>
+</Book>
+<Book Title="Contact" OriginalLanguage="English" Genre="Science Fiction">
+  <Author Name="Carl Sagan" Email="carlsagan@nasa.gov" YearOfBirth="1913" Country="USA"></Author>
+  <Edition Year="1988" Price="140">
+    <Translation Language="Swedish" Publisher="SCB" Price="160"></Translation>
+    <Translation Language="German" Price="140"></Translation>
+    <Translation Language="Russian" Publisher="RP" Price="140"></Translation>
+  </Edition>
+</Book>
+<Book Title="The Fourth Star" OriginalLanguage="English" Genre="Science Fiction">
+  <Author Name="Leslie Brenner" Email="leslie@yahoo.com" YearOfBirth="1945" Country="USA"></Author>
+  <Edition Year="2001" Price="210">
+    <Translation Language="Swedish" Publisher="Bästa Bok" Price="260"></Translation>
+  </Edition>
+</Book>
+<Book Title="Våren vid sjön" OriginalLanguage="Swedish" Genre="Novel">
+  <Author Name="Marie Franksson" Email="franksson@bok.se" YearOfBirth="1937" Country="Sweden"></Author>
+  <Edition Year="1982" Price="45"></Edition>
+  <Edition Year="1989" Price="48"></Edition>
+</Book>
+<Book Title="Dödliga Data" OriginalLanguage="Swedish" Genre="Thriller">
+  <Author Name="Jakob Hanson" Email="jh22@hotmail.com" YearOfBirth="1946" Country="Sweden"></Author>
+  <Edition Year="1993" Price="120"></Edition>
+</Book>
+<Book Title="Music Now and Before" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Sam Davis" Email="sd@music.com" YearOfBirth="1939" Country="Mexiko"></Author>
+  <Author Name="Mimi Pappas" Email="mimi@music.com" YearOfBirth="1972" Country="USA"></Author>
+  <Edition Year="1997" Price="300">
+    <Translation Language="German" Publisher="ABC International" Price="310"></Translation>
+    <Translation Language="French" Price="310"></Translation>
+    <Translation Language="Russian" Price="300"></Translation>
+  </Edition>
+  <Edition Year="1999" Price="315">
+    <Translation Language="German" Publisher="ABC International" Price="320"></Translation>
+    <Translation Language="French" Publisher="ABC International" Price="330"></Translation>
+  </Edition>
+  <Edition Year="2001" Price="335">
+    <Translation Language="German" Publisher="ABC International" Price="350"></Translation>
+  </Edition>
+</Book>
+<Book Title="Midsommar i Lund" OriginalLanguage="Swedish" Genre="Novel">
+  <Author Name="Marie Franksson" Email="franksson@bok.se" YearOfBirth="1937" Country="Sweden"></Author>
+  <Edition Year="1988" Price="75">
+    <Translation Language="Finnish" Publisher="Suomi Bookkii" Price="95"></Translation>
+  </Edition>
+</Book>
+<Book Title="Encore une fois" OriginalLanguage="French">
+  <Author Name="Pierre Zargone" Email="zargone@fans.be" YearOfBirth="1968" Country="Belgium"></Author>
+  <Edition Year="1997" Price="120">
+    <Translation Language="English" Price="120"></Translation>
+    <Translation Language="Russian" Price="110"></Translation>
+  </Edition>
+  <Edition Year="2001" Price="150">
+    <Translation Language="English" Publisher="Pels And Jafs" Price="180"></Translation>
+    <Translation Language="Russian" Price="140"></Translation>
+  </Edition>
+</Book>
+<Book Title="European History" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Carl George" Email="cg@eu.int" YearOfBirth="1939" Country="France"></Author>
+  <Author Name="Peter Feldon" Email="pf@eu.int" YearOfBirth="1917" Country="England"></Author>
+  <Author Name="Lilian Carrera" Email="lc@eu.int" YearOfBirth="1922" Country="Spain"></Author>
+  <Author Name="Auna Gonzales Perre" Email="agp@eu.int" YearOfBirth="1942" Country="Portugal"></Author>
+  <Author Name="Kostas Andrianos" Email="ka@eu.int" YearOfBirth="1936" Country="Greece"></Author>
+  <Author Name="Andreas Shultz" Email="as@eu.int" YearOfBirth="1919" Country="Austria"></Author>
+  <Author Name="Antje Liedderman" Email="al@eu.int" YearOfBirth="1950" Country="Germany"></Author>
+  <Author Name="Christina Ohlsen" Email="co@eu.int" YearOfBirth="1933" Country="Norway"></Author>
+  <Edition Year="1998" Price="650">
+    <Translation Language="Greek" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Spanish" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Portuguese" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Italian" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="French" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Dutch" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Norwegian" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Swedish" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Finnish" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Danish" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Russian" Publisher="EU Publishing" Price="650"></Translation>
+    <Translation Language="Bulgarian" Publisher="EU Publishing" Price="650"></Translation>
+  </Edition>
+</Book>
+<Book Title="Musical Instruments" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Sam Davis" Email="sd@music.com" YearOfBirth="1939" Country="Mexiko"></Author>
+  <Author Name="Alicia Bing" Email="bing@bing.be" YearOfBirth="1952" Country="Belgium"></Author>
+  <Edition Year="1991" Price="300">
+    <Translation Language="Portuguese" Publisher="ABC International" Price="300"></Translation>
+    <Translation Language="Chinese" Publisher="ABC International" Price="350"></Translation>
+    <Translation Language="Russian" Publisher="ABC International" Price="355"></Translation>
+    <Translation Language="Italian" Publisher="ABC International" Price="345"></Translation>
+    <Translation Language="Spanish" Publisher="ABC International" Price="335"></Translation>
+  </Edition>
+  <Edition Year="2001" Price="500">
+    <Translation Language="Dutch" Publisher="ABC International" Price="510"></Translation>
+    <Translation Language="German" Publisher="ABC International" Price="510"></Translation>
+    <Translation Language="Spanish" Publisher="ABC International" Price="505"></Translation>
+  </Edition>
+</Book>
+<Book Title="Oceans on Earth" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Linda Evans" Email="levans@ocean.uot.edu" YearOfBirth="1966" Country="USA"></Author>
+  <Author Name="Chuck Morrisson" Email="morrisson@home.to" YearOfBirth="1963" Country="England"></Author>
+  <Author Name="Kay Morrisson" Email="morrisson@home.to" YearOfBirth="1969" Country="England"></Author>
+  <Edition Year="1996" Price="400">
+    <Translation Language="French" Publisher="ABC International" Price="420"></Translation>
+    <Translation Language="German" Publisher="ABC International" Price="400"></Translation>
+  </Edition>
+  <Edition Year="1998" Price="420">
+    <Translation Language="French" Publisher="ABC International" Price="430"></Translation>
+    <Translation Language="Spanish" Publisher="ABC International" Price="420"></Translation>
+  </Edition>
+  <Edition Year="2001" Price="460">
+    <Translation Language="Dutch" Publisher="ABC International" Price="500"></Translation>
+    <Translation Language="Danish" Publisher="ABC International" Price="530"></Translation>
+    <Translation Language="Italian" Publisher="ABC International" Price="510"></Translation>
+  </Edition>
+  <Edition Year="2002" Price="500"></Edition>
+</Book>
+<Book Title="The Beach House" OriginalLanguage="English" Genre="Novel">
+  <Author Name="James Patterson" Email="jp@hotmail.com" YearOfBirth="1955" Country="USA"></Author>
+  <Author Name="Peter de Jonge" Email="pj@mail.com" YearOfBirth="1961" Country="USA"></Author>
+  <Edition Year="2002" Price="180"></Edition>
+</Book>
+<Book Title="Le chateau de mon pere" OriginalLanguage="French">
+  <Author Name="Franc Desteille" Email="franc@chateau.fr" YearOfBirth="1925" Country="France"></Author>
+  <Edition Year="1964" Price="65">
+    <Translation Language="English" Publisher="Benton Inc" Price="105"></Translation>
+    <Translation Language="Spanish" Price="100"></Translation>
+    <Translation Language="Greek" Price="100"></Translation>
+    <Translation Language="Italian" Publisher="Aurora Publ." Price="95"></Translation>
+    <Translation Language="German" Price="100"></Translation>
+  </Edition>
+</Book>
+<Book Title="Oceanography for Dummies" OriginalLanguage="English" Genre="Educational">
+  <Author Name="Linda Evans" Email="levans@ocean.uot.edu" YearOfBirth="1966" Country="USA"></Author>
+  <Edition Year="2004" Price="190">
+    <Translation Language="Russian" Publisher="ABC International" Price="190"></Translation>
+  </Edition>
+  <Edition Year="2009" Price="220">
+    <Translation Language="Russian" Publisher="ABC International" Price="220"></Translation>
+  </Edition>
+</Book>
+</Books>

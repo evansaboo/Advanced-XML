@@ -1,0 +1,17 @@
+<!ELEMENT Books (Book+)>
+<!ELEMENT Book (Author+,Edition+)>
+<!ATTLIST Book Title CDATA #REQUIRED
+OriginalLanguage CDATA #REQUIRED
+Genre CDATA "N/A">
+<!ELEMENT Edition (Translation*)>
+<!ATTLIST Edition Year CDATA #REQUIRED
+Price CDATA #REQUIRED>
+<!ELEMENT Translation EMPTY>
+<!ATTLIST Translation Language CDATA #REQUIRED
+Publisher CDATA "N/A"
+Price CDATA #REQUIRED>
+<!ELEMENT Author EMPTY>
+<!ATTLIST Author Name CDATA #REQUIRED
+Email CDATA #REQUIRED
+YearOfBirth CDATA #REQUIRED
+Country CDATA #REQUIRED>

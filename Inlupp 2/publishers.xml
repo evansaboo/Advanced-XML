@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Publishers SYSTEM "Publishers.dtd">
+<Publishers>
+   <Publisher Name="ABC International">
+      <Address>
+         <Street>7th Bear St.</Street>
+         <City>Berlin</City>
+         <PostalCode>44500</PostalCode>
+         <Country>Germany</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Addison">
+      <Address>
+         <Street>2nd Monet St.</Street>
+         <City>Toulouse</City>
+         <PostalCode>98700</PostalCode>
+         <Country>France</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Aurora Publ.">
+      <Address>
+         <Street>3rd Uffizi Rd.</Street>
+         <City>Florence</City>
+         <PostalCode>49112</PostalCode>
+         <Country>Italy</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Benton Inc">
+      <Address>
+         <Street>4th Queen Ave.</Street>
+         <City>London</City>
+         <PostalCode>34565</PostalCode>
+         <Country>England</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Bästa Bok">
+      <Address>
+         <Street>9th Bokgatan</Street>
+         <City>Stockholm</City>
+         <PostalCode>12309</PostalCode>
+         <Country>Sweden</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="EU Publishing">
+      <Address>
+         <Street>45th Beer St.</Street>
+         <City>Brussels</City>
+         <PostalCode>34990</PostalCode>
+         <Country>Belgium</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="KLC">
+      <Address>
+         <Street>1st Upplandsv.</Street>
+         <City>Uppsala</City>
+         <PostalCode>34067</PostalCode>
+         <Country>Sweden</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Kingsly">
+      <Address>
+         <Street>98th Waltz St.</Street>
+         <City>Vienna</City>
+         <PostalCode>12369</PostalCode>
+         <Country>Austria</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Pels And Jafs">
+      <Address>
+         <Street>32nd Lake Ave.</Street>
+         <City>Edinburg</City>
+         <PostalCode>87300</PostalCode>
+         <Country>Scotland</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="RP">
+      <Address>
+         <Street>34th Red Square</Street>
+         <City>Saint Petersburg</City>
+         <PostalCode>34005</PostalCode>
+         <Country>Russia</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="SCB">
+      <Address>
+         <Street>3rd Odengatan</Street>
+         <City>Stockholm</City>
+         <PostalCode>10405</PostalCode>
+         <Country>Sweden</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Shou-Ling">
+      <Address>
+         <Street>12th Great Wall St.</Street>
+         <City>Shanghai</City>
+         <PostalCode>12333</PostalCode>
+         <Country>China</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Suomi Bookkii">
+      <Address>
+         <Street>4th Yksi Rd.</Street>
+         <City>Helsinki</City>
+         <PostalCode>12003</PostalCode>
+         <Country>Finland</Country>
+      </Address>
+   </Publisher>
+   <Publisher Name="Turk And Turk">
+      <Address>
+         <Street>45th Otoman Ave.</Street>
+         <City>Ankara</City>
+         <PostalCode>23000</PostalCode>
+         <Country>Turkey</Country>
+      </Address>
+   </Publisher>
+</Publishers>

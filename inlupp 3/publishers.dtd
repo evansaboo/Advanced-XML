@@ -1,0 +1,8 @@
+<!ELEMENT Publishers (Publisher+)>
+<!ELEMENT Publisher (Address)>
+<!ATTLIST Publisher Name CDATA #REQUIRED>
+<!ELEMENT Address (Street, City, PostalCode, Country)>
+<!ELEMENT Street (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT PostalCode (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>

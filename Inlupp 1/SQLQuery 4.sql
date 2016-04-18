@@ -1,4 +1,4 @@
-SELECT XMLAGG(XMLELEMENT(NAME "Resultat" , elevdata))
+SELECT XMLELEMENT(NAME "Resultat" , XMLAGG(elevdata))
 FROM (SELECT XMLELEMENT(NAME "Elev", 
 XMLATTRIBUTES(a.namn AS "namn"), 
 XMLAGG(XMLELEMENT(NAME "Lokal", a.lokal))) AS elevdata

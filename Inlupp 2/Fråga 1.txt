@@ -1,0 +1,4 @@
+element Resultat{
+  for $bok in //Book[count(Edition) > 1]
+  return element Bok{attribute Titel{$bok/@Title}}
+}

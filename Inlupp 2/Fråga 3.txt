@@ -1,0 +1,8 @@
+element Resultat{
+  for $bok in //Book[Edition//@Language = "Russian"]
+  let $count := count($bok//Translation[not(@Language = "Russian")])
+  where $count > 0
+  return element Bok{attribute Titel{$bok/@Title},
+                     attribute Originalspråk{$bok/@OriginalLanguage},
+                     attribute Antalandraspråk{$count}}
+}

@@ -1,0 +1,7 @@
+element Resultat{
+  for $genre in distinct-values(//@Genre)
+  return element Genre{attribute Namn{$genre},
+                       for $f in distinct-values(//Book[@Genre = $genre]/Author/@Name)
+                       return element Författare{$f}
+                      }
+}

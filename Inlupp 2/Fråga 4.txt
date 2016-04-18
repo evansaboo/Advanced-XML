@@ -1,0 +1,26 @@
+element Resultat{
+  let $Pdoc := doc("C:/Users/Evan/Documents/GitHub/Avancerad-XML/Inlupp 2/Publishers.xml")
+  for $förlag in $Pdoc//Publisher
+  let $true := (for $bok in //Book
+                           let $a := count($bok//Translation[@Publisher = $förlag/@Name])
+                           let $b := count($bok//Translation)
+                           where $a = $b and $a > 0
+                           return element Bok{attribute Titel{$bok/@Title}, $bok/@Genre})
+  where count($true) > 0
+  return element Förlag{attribute Namn{$förlag/@Name},
+                        attribute Land{$förlag//Country},
+                         $true}
+}
+
+
+element Resultat{
+  let $Pdoc := doc("C:/Users/Evan/Documents/GitHub/Avancerad-XML/Inlupp 2/Publishers.xml")
+  for $förlag in $Pdoc//Publisher
+  let $true := ( for $bok in //Book[count(*//@Publisher[. = $förlag/@Name]) = count(*//Translation)]
+                           where count($bok//Translation) > 0
+                           return element Bok{attribute Titel{$bok/@Title}, $bok/@Genre})
+  where count($true) > 0
+  return element Förlag{attribute Namn{$förlag/@Name},
+                        attribute Land{$förlag//Country},
+                         $true}
+}
