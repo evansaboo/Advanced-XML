@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simpleviewergallery 
+
+	useFlickr="false"
+	resizeOnImport="true"
+	cropToFit="false"
+	thumbPosition="BOTTOM"
+	thumbRows="1"
+	thumbColumns="5"
+	showOpenButton="true"
+	showFullscreenButton="true"
+	frameWidth="15"
+	galleryWidth="100%"
+	galleryHeight="100%"
+	indexPageName="outletgalleri.html"
+
+>
+  <image imageURL="images/IMG_6922.JPG"
+	thumbURL="thumbs/IMG_6922.JPG"
+	linkURL="images/IMG_6922.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6923.JPG"
+	thumbURL="thumbs/IMG_6923.JPG"
+	linkURL="images/IMG_6923.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6925.JPG"
+	thumbURL="thumbs/IMG_6925.JPG"
+	linkURL="images/IMG_6925.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6926.JPG"
+	thumbURL="thumbs/IMG_6926.JPG"
+	linkURL="images/IMG_6926.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6927.JPG"
+	thumbURL="thumbs/IMG_6927.JPG"
+	linkURL="images/IMG_6927.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6928.JPG"
+	thumbURL="thumbs/IMG_6928.JPG"
+	linkURL="images/IMG_6928.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6929.JPG"
+	thumbURL="thumbs/IMG_6929.JPG"
+	linkURL="images/IMG_6929.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6930.JPG"
+	thumbURL="thumbs/IMG_6930.JPG"
+	linkURL="images/IMG_6930.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_6931.JPG"
+	thumbURL="thumbs/IMG_6931.JPG"
+	linkURL="images/IMG_6931.JPG"
+	linkTarget="_blank">
+    <caption><![CDATA[]]></caption>
+  </image>
+</simpleviewergallery>
