@@ -115,7 +115,13 @@ function MM_preloadImages() { //v3.0
 			<ul class="cf">
 				<li><a href="hem.html">Hem</a></li>
 				<li><a href="galleri3.html">Galleri</a></li>
-				<li><a href="outletsida/outlet.html">Outlet</a></li>
+				<li><a class="dropdown" href="outletsida/outlet.html">Outlet </a>
+					<ul>
+					  <li><a href="#">Sub-menu Item 1</a></li>
+					  <li><a href="#">Sub-menu Item 1</a></li>
+					  <li><a href="#">Sub-menu Item 1</a></li>
+					</ul>
+				</li>
 				<li><a href="fragor.html">Frågor & Svar</a></li>
 				<li><a href="hitta.html">Hitta hit</a></li>
 				<li><a href="kontakt.html">Kontakt</a></li>
@@ -145,8 +151,7 @@ function MM_preloadImages() { //v3.0
     <td height="251" background="bgmain.PNG"><table width="100%" height="262" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" background="bgmain.PNG">
       <tr>
         
-		<td width="49%" height="172" valign="top">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<td width="49%" height="172" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
 		  <tr>
 		    <td width="44%" height="326" valign="top" class="navText"><p>&nbsp;</p>
 		      <p>Adress: <br />
@@ -154,38 +159,17 @@ function MM_preloadImages() { //v3.0
 		        Segersbyv&auml;gen 20<br />
 		        145 63<br />
 		        Norsbor</strong></span><strong>g</strong></p>
-				<p>Vid sidan finns en f&ouml;rklarande karta.</p>	      
-			  <p><strong>V&auml;lkommna Hit och Fynda! </strong></p></td>
-				<!--Google maps code -->
-				<td width="56%" valign="top">
-				<div id="map"></div>
-				<script>
-				  function initMap() {
-					var myLatLng = {lat: 59.237192, lng: 17.836052};
-
-					var map = new google.maps.Map(document.getElementById('map'), {
-					  zoom: 17,
-					  center: myLatLng
-					});
-
-					var marker = new google.maps.Marker({
-					  position: myLatLng,
-					  map: map,
-					  title: 'Egs Fyndmarknad'
-					});
-				  }
-				</script>
-			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-		
-		                <p class="navText"> Klicka på Egs ikonen och skriv in vart du kommer ifr&aring;n s&aring; f&aring;r du en v&auml;gbeskrivning till oss. I f&auml;ltet &quot;Till:&quot; skriver du: Segersbyv&auml;gen 20, NORSBORG, BOTKYRKA.</p></td>
-
-		</td>
+		      <p>Vid sidan finns en f&ouml;rklarande karta, klicka f&ouml;r st&ouml;rre bild.<br />
+		        Du kan &auml;ven &quot;<a href="http://kartor.eniro.se/query?&what=route&mop=aq&mapstate=1;17;62.2;s;-13.7723888356932;77.05906327213823;47.700657416026;47.380585050395965;877;799&stq=0&pis=0#&what=route&mapstate=1;17.000000;62.200000;s;-13.7723888356932;77.05906327213823;47.700657416026;47.380585050395965;877;799&rform=1&m_width=877&m_height=799&addr1=||||||||A||&addr2=|Segersbyv&#228;gen%2020,%2014563%20NORSBORG|14563|17.836190853878332|59.237044111074496|7|maps_address;1089827;11||A||&toSearch=Segersbyv&#228;gen%2020,%2014563%20NORSBORG&calculationMode=fastest" class="style15"><strong>Klicka h&auml;r</strong></a>&quot; och f&aring; en v&auml;gbeskrivning fr&aring;n din<br />
+		        befintliga plats fram till oss. Enkelt!</p>
+		      <p>&nbsp;</p>
+		      <p>&nbsp;</p>		      <p><strong>V&auml;lkommna Hit och Fynda! </strong></p></td>
+              <td width="56%" valign="top"><p><a href="kartastor.jpg" target="_blank"><img src="karta.jpg" width="500" height="282" border="0" /></a><br />
+                  <span class="style11">(Klicka f&ouml;r stor bild)</span>              </p>
+                <p class="navText"> <a href="http://kartor.eniro.se/query?&what=route&mop=aq&mapstate=1;17;62.2;s;-13.7723888356932;77.05906327213823;47.700657416026;47.380585050395965;877;799&stq=0&pis=0#&what=route&mapstate=1;17.000000;62.200000;s;-13.7723888356932;77.05906327213823;47.700657416026;47.380585050395965;877;799&rform=1&m_width=877&m_height=799&addr1=||||||||A||&addr2=|Segersbyv&#228;gen%2020,%2014563%20NORSBORG|14563|17.836190853878332|59.237044111074496|7|maps_address;1089827;11||A||&toSearch=Segersbyv&#228;gen%2020,%2014563%20NORSBORG&calculationMode=fastest" class="style15">Klicka H&auml;r </a>och skriv in vart du kommer ifr&aring;n s&aring; f&aring;r du en v&auml;gbeskrivning till oss. I f&auml;ltet &quot;Till:&quot; skriver du: Segersbyv&auml;gen 20, NORSBORG, BOTKYRKA.</p></td>
 		  </tr>
-		  </table>          
-		  </td></tr>
-    </table>
-	</td>
+		  </table>          </td></tr>
+    </table></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -199,9 +183,9 @@ function MM_preloadImages() { //v3.0
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td background="bgmeny1.png"></td>
-    <td height="10" background="bgmeny1.png"></td>
-    <td background="bgmeny1.png"></td>
+    <td background="bgmeny.png"></td>
+    <td height="10" background="bgmeny.png"></td>
+    <td background="bgmeny.png"></td>
   </tr>
   <tr>
     <td></td>
