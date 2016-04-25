@@ -1,6 +1,6 @@
-nav ul {
+﻿nav ul {
+
 	-webkit-font-smoothing:antialiased;
-    background: #111111;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ nav li {
     min-width: 16.66%;
 }
 nav a {
-    background: #111111;
+ 
     color: #fff;
     display: block;
     font: bold 16px/40px sans-serif;
