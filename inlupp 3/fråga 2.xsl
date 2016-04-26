@@ -6,16 +6,11 @@
 	<xsl:variable name="docPublisher" select="document('publishers.xml')" />
 	<Resultat>
 		<xsl:for-each select="$docPublisher//Publisher">
-			<xsl:variable name="testBook" select="$docBook//Book[count(*//@Publisher[. = current()/@Name]) = count(*//Translation)]"/>
-			<xsl:if test="count($testBook//Translation) > 0">
 				<Förlag Namn="{@Name}" Land="{.//Country}">
-					<xsl:for-each select="$testBook">
-						<xsl:if test="count(current()//Translation) > 0">
-							<Bok Namn="{@Title}" Genre="{@Genre}"/>
-						</xsl:if>
+					<xsl:for-each select="$docBook//Book[*//@Publisher = current()/@Name]">
+					 <Book Titel="{@Title}" Genre="{@Genre}"/>
 					</xsl:for-each>
 				</Förlag>
-			</xsl:if>
 		</xsl:for-each>
 	</Resultat>
 </xsl:template>

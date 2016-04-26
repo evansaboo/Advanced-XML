@@ -1,13 +1,13 @@
-SELECT XMLELEMENT(NAME "Alla", XMLAGG(X))
-FROM(
-SELECT XMLELEMENT(NAME "Författare",
-				  XMLATTRIBUTES(Author.name AS "Namn", eCountry as "Land"),
-				  XMLAGG(XMLELEMENT(NAME "Bok" ,
-								    XMLATTRIBUTES(Book.title as "Titel", OriginalLanguage as "OriginalSpråk", Book.genre as "Genre")))) as X
-FROM  author INNER JOIN
-      authorship ON author.id = authorship.author INNER JOIN
-      book ON authorship.book = book.id,
-      XMLTABLE('$I//Country' PASSING Info as "I"
-      	COLUMNS
-      	eCountry	VARCHAR(20)		PATH '.')
-group by name, eCountry)
+SELECT XMLELEMENT(NAME "Resultat", XMLAGG(F))
+FROM
+	(SELECT XMLELEMENT(NAME "Förlag", XMLATTRIBUTES(name as "Namn", Country as "Land"),
+					 XMLAGG(XMLELEMENT(NAME "Bok", XMLATTRIBUTES(Title as "Titel", Genre as "Genre")))) as F	
+	FROM(
+	SELECT DISTINCT Name, Country, Title, Genre
+	FROM book INNER JOIN
+	      edition ON book.id = edition.book, Publisher, XMLTABLE('$Info//@Publisher' Passing Translations AS "Info"
+	      														COLUMNS
+	      														Publishers		VARCHAR(20)		Path '.')
+	WHERE Name = Publishers
+	)
+	group by name, country)
