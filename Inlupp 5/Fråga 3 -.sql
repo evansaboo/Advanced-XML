@@ -11,5 +11,5 @@ FROM(
 	      book ON authorship.book = book.id,
 	      XMLTABLE('$I//Country' PASSING Info as "I"
 	      	COLUMNS
-	      	eCountry	VARCHAR(20)		PATH '.')
+	      	eCountry	VARCHAR(20)		PATH 'text()')
 	group by name, eCountry)

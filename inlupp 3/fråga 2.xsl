@@ -8,7 +8,9 @@
 		<xsl:for-each select="$docPublisher//Publisher">
 				<Förlag Namn="{@Name}" Land="{.//Country}">
 					<xsl:for-each select="$docBook//Book[*//@Publisher = current()/@Name]">
-					 <Book Titel="{@Title}" Genre="{@Genre}"/>
+					 <Bok Titel="{@Title}">
+						<xsl:copy-of select="@Genre"/>
+						</Bok>
 					</xsl:for-each>
 				</Förlag>
 		</xsl:for-each>
