@@ -3,7 +3,7 @@ SET Translations = XMLQUERY('
 					copy $nye := $e
 					modify insert node element Translation {
 					attribute Language {"Norwegian"},
-					attribute Publisher {"LCK"},
+					attribute Publisher {"KLC"},
 					attribute Price {"200"}} as last into $nye/Translations
 					return $nye' PASSING Translations AS "e"
           RETURNING CONTENT)

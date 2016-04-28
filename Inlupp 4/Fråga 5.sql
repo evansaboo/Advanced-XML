@@ -4,7 +4,7 @@ SET Translations = XMLQUERY('
 					copy $nye := $e
 					modify do insert element Translation {
 					attribute Language {"Norwegian"},
-					attribute Publisher {"LCK"},
+					attribute Publisher {"KLC"},
 					attribute Price {"200"}} as last into $nye/Translations
 					return $nye' PASSING Translations AS "e")
 WHERE year = (SELECT MAX(year) FROM edition where book IN(

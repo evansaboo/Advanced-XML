@@ -1,0 +1,8 @@
+SELECT Title as Titel
+FROM Book
+WHERE ID IN(SELECT Book
+			FROM EDITION
+			GROUP BY Book
+			HAVING COUNT(*) > 1
+			)
+FOR XML AUTO, ROOT('Resultat')
