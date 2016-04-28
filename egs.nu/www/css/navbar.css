@@ -28,10 +28,10 @@ nav a {
             transition: all .25s ease;
 }
 nav .dropdown:after {
-    content:'\25bc'
+    content:' \25BC'
 }
 nav .dropdown:hover:after{
-	content:'\25bc'
+	content:' \25BC'
 }
 nav li:hover a {
     background: #fff;

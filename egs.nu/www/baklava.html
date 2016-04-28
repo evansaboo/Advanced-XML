@@ -4,20 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>EG&acute;s Fyndmarknad</title>
 <meta charset="utf-8" />
-    
-	<link rel="stylesheet" href="css/tattootoo.css" type="text/css" />
-	<link rel="stylesheet" href="css/navbar.css" type="text/css" />
+    	<link rel="stylesheet" href="css/tattootoo.css" type="text/css" />
+		<link rel="stylesheet" href="css/navbar.css" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css" />
 	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/tabs.js"></script>
 <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.x.js"></script>
-	<script>
-<!--
 
-
-
+<script>
 
 $(document).ready(function(){				   	
 			$('.slider')._TMS({
@@ -37,23 +33,17 @@ $(document).ready(function(){
 				progressBar:false
 			})		
 		});
-//-->
+	
 </script>
 
     <style type="text/css">
 <!--
-a:hover {
-	color: #666666;
-	text-decoration: none;
-}
+
 body {
-	background-image: url(slide.png);
-	background-size: 100% auto;
+	background-image: url(bg2.jpg);
+	background-repeat: repeat-y;
 }
-a:link {
-	color: #FFFFFF;
-	text-decoration: none;
-}
+
 .style11 {
 	font-size: 10px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -61,6 +51,7 @@ a:link {
 	padding-bottom: 5px;
 	color: #FFFFFF;
 }
+.style12 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
 a:visited {
 	text-decoration: none;
 }
@@ -68,22 +59,11 @@ a:active {
 	text-decoration: underline;
 }
 .style13 {color: #FFFFFF}
-.style14 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-}
-.style15 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight: bold;
-}
-.style16 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.style15 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
 -->
     </style>
 <script type="text/JavaScript">
 <!--
-
-
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
@@ -113,11 +93,7 @@ function MM_preloadImages() { //v3.0
 	<td align="center">
 		<nav>
 			<ul class="cf">
-				<li><a class="dropdown" href="hem.html">Hem</a>
-				<ul>
-					<li><a href="baklava.html">Baklava & Nötter</a></li>
-				</ul>
-				</li>
+				<li><a href="hem.html">Hem</a></li>
 				<li><a href="galleri3.html">Galleri</a></li>
 				<li><a href="outletsida/outlet.html">Outlet</a></li>
 				<li><a href="fragor.html">Frågor & Svar</a></li>
@@ -136,61 +112,30 @@ function MM_preloadImages() { //v3.0
     <td height="10">&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
-  <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="50%">&nbsp;</td>
-      <td width="50%" background="bgmain2.png"><div align="center"><img src="hittahit.PNG" width="196" height="54" /></div></td>
-    </tr>
-  </table></td>
-    <td height="47" background="bgmain2.png" class="navText"><span class="style14">EG&acute;s Fyndmarknad befinner sig i Alby, i Norra<br />
-  Botkyrka, s&ouml;der om Stockholm.</span> </td>
+  <td>&nbsp;</td>
+    <td height="47" background="bgmain2.png"><span class="style15">Välkommen till butiken där allt är sött och gott!</span></td>
     <td>&nbsp;</td>
   </tr><tr>
     <td>&nbsp;</td>
     <td height="251" background="bgmain.PNG"><table width="100%" height="262" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000" background="bgmain.PNG">
       <tr>
         
-		<td width="49%" height="172" valign="top">
-		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<td width="49%" height="172"><table width="100%" border="0" cellpadding="0" cellspacing="0">
 		  <tr>
-		    <td width="44%" height="326" valign="top" class="navText"><p>&nbsp;</p>
-		      <p>Adress: <br />
-		        <span class="style15"><strong>EG&acute;s Fyndmarknad<br />
-		        Segersbyv&auml;gen 20<br />
-		        145 63<br />
-		        Norsbor</strong></span><strong>g</strong></p>
-				<p>Vid sidan finns en f&ouml;rklarande karta.</p>	      
-			  <p><strong>V&auml;lkommna Hit och Fynda! </strong></p></td>
-				<!--Google maps code -->
-				<td width="56%" valign="top">
-				<div id="map"></div>
-				<script>
-				  function initMap() {
-					var myLatLng = {lat: 59.237192, lng: 17.836052};
-
-					var map = new google.maps.Map(document.getElementById('map'), {
-					  zoom: 17,
-					  center: myLatLng
-					});
-
-					var marker = new google.maps.Marker({
-					  position: myLatLng,
-					  map: map,
-					  title: 'Egs Fyndmarknad'
-					});
-				  }
-				</script>
-			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-		
-		                <p class="navText"> Klicka på Egs ikonen och skriv in vart du kommer ifr&aring;n s&aring; f&aring;r du en v&auml;gbeskrivning till oss. I f&auml;ltet &quot;Till:&quot; skriver du: Segersbyv&auml;gen 20, NORSBORG, BOTKYRKA.</p></td>
-
-		</td>
-		  </tr>
-		  </table>          
-		  </td></tr>
-    </table>
-	</td>
+		    <td width="52%" height="398" valign="top">
+			<div class="center">
+			<div class="slider">
+                <ul class="items">
+                    <li><img src="sliderbild/slider-1.jpg" alt="" /><div class="banner"></div></li>
+                    <li><img src="sliderbild/slider-2.jpg" alt="" /><div class="banner"></div></li>
+                    <li><img src="sliderbild/slider-3.jpg" alt="" /><div class="banner"></div></li>
+					<li><img src="sliderbild/slider-4.jpg" alt="" /><div class="banner"></div></li>
+					<li><img src="sliderbild/slider-5.jpg" alt="" /><div class="banner"></div></li>
+                </ul>
+            </div></div>			</td>
+              </tr>
+		  </table>          </td></tr>
+    </table></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -200,7 +145,18 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td height="145">&nbsp;</td>
+    <td height="167" background="bgmain2.png"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="32%" height="236" valign="top"><a href="hem.html"><img src="erbjudanden.png" width="300" height="240" border="0" align="top" /></a></td>
+        <td width="34%" valign="top"><a href="galleri3.html"><img src="fotoalbum.png" width="300" height="240" border="0" /></a></td>
+        <td width="34%"><a href="hitta.html"><img src="hitta.png" width="300" height="240" border="0" /></a></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td height="19">&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -211,7 +167,7 @@ function MM_preloadImages() { //v3.0
   <tr>
     <td></td>
     <td height="10" class="style11"><div align="center">&Ouml;ppet alla dagar 09-20 | Segersbyv&auml;gen 20 ,145 63 Norsborg | +46 (0)8-53188020</div></td>
-    <td><span class="style11">Copyright 2012 &copy; EG&acute;s Fyndmarknad </span></td>
+    <td><span class="style11">Copyright 2012 &copy; EG&acute;s Fyndmarknad </span> </td>
   </tr>
 </table>
 </body>
