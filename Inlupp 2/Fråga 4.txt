@@ -3,19 +3,7 @@ element Resultat{
   for $förlag in $Pdoc//Publisher
   return element Förlag{attribute Namn{$förlag/@Name},
                         attribute Land{$förlag//Country},
-                      for $Bok in //Book[*//@Publisher = $förlag/@Name]
-                    return element Bok{attribute Titel{$Bok/@Title},
-                                       $Bok/@Genre}}
-}
-
-element Resultat{
-  let $Pdoc := doc("C:/Users/Evan/Documents/GitHub/Avancerad-XML/Inlupp 2/Publishers.xml")
-  for $förlag in $Pdoc//Publisher
-  let $true := ( for $bok in //Book[count(*//@Publisher[. = $förlag/@Name]) = count(*//Translation)]
-                           where count($bok//Translation) > 0
-                           return element Bok{attribute Titel{$bok/@Title}, $bok/@Genre})
-  where count($true) > 0
-  return element Förlag{attribute Namn{$förlag/@Name},
-                        attribute Land{$förlag//Country},
-                         $true}
+                        for $Bok in //Book[*//@Publisher = $förlag/@Name]
+                        return element Bok{attribute Titel{$Bok/@Title},
+                                           $Bok/@Genre}}
 }

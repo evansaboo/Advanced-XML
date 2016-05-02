@@ -1,0 +1,10 @@
+﻿<Resultat>
+  <Bok Titel="Archeology in Egypt"/>
+  <Bok Titel="Database Systems in Practice"/>
+  <Bok Titel="Våren vid sjön"/>
+  <Bok Titel="Music Now and Before"/>
+  <Bok Titel="Encore une fois"/>
+  <Bok Titel="Musical Instruments"/>
+  <Bok Titel="Oceans on Earth"/>
+  <Bok Titel="Oceanography for Dummies"/>
+</Resultat>

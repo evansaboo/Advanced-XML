@@ -1,0 +1,8 @@
+﻿<Resultat>
+  <Bok Titel="Misty Nights" Originalspråk="English" Antalandraspråk="2"/>
+  <Bok Titel="Contact" Originalspråk="English" Antalandraspråk="2"/>
+  <Bok Titel="Music Now and Before" Originalspråk="English" Antalandraspråk="2"/>
+  <Bok Titel="Encore une fois" Originalspråk="French" Antalandraspråk="1"/>
+  <Bok Titel="European History" Originalspråk="English" Antalandraspråk="11"/>
+  <Bok Titel="Musical Instruments" Originalspråk="English" Antalandraspråk="6"/>
+</Resultat>

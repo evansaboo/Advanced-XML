@@ -1,0 +1,47 @@
+﻿<Resultat>
+  <Förlag Namn="ABC International" Land="Germany">
+    <Bok Titel="Music Now and Before" Genre="Educational"/>
+    <Bok Titel="Musical Instruments" Genre="Educational"/>
+    <Bok Titel="Oceans on Earth" Genre="Educational"/>
+    <Bok Titel="Oceanography for Dummies" Genre="Educational"/>
+  </Förlag>
+  <Förlag Namn="Addison" Land="France">
+    <Bok Titel="Misty Nights" Genre="Thriller"/>
+  </Förlag>
+  <Förlag Namn="Aurora Publ." Land="Italy">
+    <Bok Titel="Le chateau de mon pere"/>
+  </Förlag>
+  <Förlag Namn="Benton Inc" Land="England">
+    <Bok Titel="Le chateau de mon pere"/>
+  </Förlag>
+  <Förlag Namn="Bästa Bok" Land="Sweden">
+    <Bok Titel="The Fourth Star" Genre="Science Fiction"/>
+  </Förlag>
+  <Förlag Namn="EU Publishing" Land="Belgium">
+    <Bok Titel="European History" Genre="Educational"/>
+  </Förlag>
+  <Förlag Namn="KLC" Land="Sweden">
+    <Bok Titel="Archeology in Egypt" Genre="Educational"/>
+  </Förlag>
+  <Förlag Namn="Kingsly" Land="Austria">
+    <Bok Titel="Misty Nights" Genre="Thriller"/>
+  </Förlag>
+  <Förlag Namn="Pels And Jafs" Land="Scotland">
+    <Bok Titel="Encore une fois"/>
+  </Förlag>
+  <Förlag Namn="RP" Land="Russia">
+    <Bok Titel="Contact" Genre="Science Fiction"/>
+  </Förlag>
+  <Förlag Namn="SCB" Land="Sweden">
+    <Bok Titel="Contact" Genre="Science Fiction"/>
+  </Förlag>
+  <Förlag Namn="Shou-Ling" Land="China">
+    <Bok Titel="Archeology in Egypt" Genre="Educational"/>
+  </Förlag>
+  <Förlag Namn="Suomi Bookkii" Land="Finland">
+    <Bok Titel="Midsommar i Lund" Genre="Novel"/>
+  </Förlag>
+  <Förlag Namn="Turk And Turk" Land="Turkey">
+    <Bok Titel="Archeology in Egypt" Genre="Educational"/>
+  </Förlag>
+</Resultat>

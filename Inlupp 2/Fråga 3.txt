@@ -1,6 +1,6 @@
 element Resultat{
-  for $bok in //Book[Edition//@Language = "Russian"]
-  let $count := count($bok//Translation[not(@Language = "Russian")])
+  for $bok in //Book[*//@Language = "Russian"]
+  let $count := count(distinct-values($bok//Translation[not(@Language = "Russian")]/@Language))
   where $count > 0
   return element Bok{attribute Titel{$bok/@Title},
                      attribute Originalspråk{$bok/@OriginalLanguage},
