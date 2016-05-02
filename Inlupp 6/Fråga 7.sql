@@ -14,3 +14,11 @@ FROM
 	      			)
 	WHERE Name = Publishers)
 	group by Country, name)
+
+
+SELECT DISTINCT name, country, c.value('@Language', 'varchar(20)')
+	FROM book INNER JOIN
+	      edition ON book.id = edition.book CROSS APPLY Translations.nodes('//Translation') AS X(c), Publisher
+	WHERE Name = c.value('@Publisher', 'varchar(20)')
+ORDER BY name
+FOR XML AUTO
