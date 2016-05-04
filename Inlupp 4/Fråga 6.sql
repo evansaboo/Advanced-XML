@@ -1,12 +1,17 @@
-SELECT title AS "Titel", Originallanguage AS "Original språk", genre AS "Genre", 
-	   countEd AS "Antal upplagor",(countLang + 1) AS "antal språk", 
-	   countAuthor AS "Antal författare", years AS "Tidigaste upplagan"
-FROM book,
+SELECT title AS "Titel", Originallanguage AS "Original språk", COALESCE(genre, 'N/A') AS "Genre", 
+	   countEd AS "Antal upplagor",(COALESCE(countLang, 0) + 1) AS "Antal språk", 
+	   countAuthor AS "Antal författare", year AS "Tidigaste upplagan"
+FROM 
 	(SELECT count(*) as countEd, book FROM book  INNER JOIN edition ON book.id = edition.book group by book) as editions,
 	(SELECT count(*) as countAuthor, book FROM  authorship INNER JOIN book ON authorship.book = book.id group by book) as authors,
-	(SELECT count(*) as countLang, book, MIN(year) as years
+	(SELECT MIN(year) as year, book FROM  Edition group by book) as years,
+book left outer join
+	(SELECT count(*) as countLang, book
 	 FROM
-		(SELECT distinct Lang, book, year FROM  edition,  XMLTABLE('$I//Translation' PASSING Translations as "I"
-																      	COLUMNS
-																      	Lang	VARCHAR(20)		PATH '@Language')) group by book) as langEd
-where book.id = editions.book AND book.id = authors.book AND book.id = langEd.book 
+		(SELECT DISTINCT Lang, book
+		FROM  edition,  XMLTABLE('$I//@Language' PASSING Translations as "I"
+								 COLUMNS
+								 Lang	   VARCHAR(20)		PATH '.')) 
+		GROUP BY book) as langEd
+		on langEd.book = book.id
+where book.id = editions.book AND book.id = authors.book AND book.id = years.book
