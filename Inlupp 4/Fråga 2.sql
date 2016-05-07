@@ -4,7 +4,7 @@ FROM
 					   XMLAGG(XMLELEMENT(NAME "Bok", XMLATTRIBUTES(Title as "Titel", Genre as "Genre")))) as F	
 	FROM(
 		SELECT DISTINCT Name, Country, Title, Genre
-		FROM book, INNER JOIN
+		FROM book INNER JOIN
 	      edition ON book.id = edition.book, Publisher,
 		       XMLTABLE('$Info//@Publisher' Passing Translations AS "Info"
 		      		COLUMNS

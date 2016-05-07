@@ -1,0 +1,11 @@
+element Böcker{
+    for $bok in //Book
+    let $titel := data($bok/@Title)
+    return(
+    if($bok/@Genre = ('Thriller', 'Science Fiction')) then
+      element Bra{$titel}
+    else if(not($bok/@Genre)) then
+      element Oklar{$titel}
+    else
+      element Dålig{$titel})
+}
