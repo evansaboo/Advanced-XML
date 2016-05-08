@@ -6,4 +6,4 @@ author INNER JOIN
        XMLTABLE('$I//Country' PASSING Info as "I"
 	      	    COLUMNS
 	      	    eCountry	VARCHAR(20)		PATH '.')
-WHERE XMLEXISTS('$T//@Language[. = "Russian"]' PASSING Translations as "T"
+WHERE XMLEXISTS('$T//@Language[. = "Russian"]' PASSING Translations as "T")

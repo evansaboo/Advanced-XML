@@ -7,7 +7,8 @@ SET Translations = XMLQUERY('
 					attribute Price {"200"}} as last into $nye/Translations
 					return $nye' PASSING Translations AS "e"
           RETURNING CONTENT)
-WHERE year = (SELECT MAX(year) FROM edition where book IN(
-														SELECT ID FROM book WHERE Title = 'Encore une fois')) AND book =(
-														SELECT ID FROM book WHERE Title = 'Encore une fois')
-
+WHERE (year, book) IN (SELECT MAX(year), book.id
+					  FROM edition, book 
+					  WHERE book = book.id
+					  AND Title = 'Encore une fois'
+					  group by book.id) 
