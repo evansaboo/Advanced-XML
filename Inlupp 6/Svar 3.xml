@@ -1,0 +1,92 @@
+<Alla>
+  <Författare Namn="John Craft" Land="England">
+    <Bok Titel="Misty Nights" OriginalSpråk="English" genre="Thriller" />
+  </Författare>
+  <Författare Namn="Arnie Bastoft" Land="Austria">
+    <Bok Titel="Archeology in Egypt" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Meg Gilmand" Land="Australia">
+    <Bok Titel="Archeology in Egypt" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Chris Ryan" Land="France">
+    <Bok Titel="Archeology in Egypt" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Alan Griff" Land="USA">
+    <Bok Titel="Database Systems in Practice" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Marty Faust" Land="USA">
+    <Bok Titel="Database Systems in Practice" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Celine Biceau" Land="Canada">
+    <Bok Titel="Database Systems in Practice" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Carl Sagan" Land="USA">
+    <Bok Titel="Contact" OriginalSpråk="English" genre="Science Fiction" />
+  </Författare>
+  <Författare Namn="Leslie Brenner" Land="USA">
+    <Bok Titel="The Fourth Star" OriginalSpråk="English" genre="Science Fiction" />
+  </Författare>
+  <Författare Namn="Jakob Hanson" Land="Sweden">
+    <Bok Titel="Dödliga Data" OriginalSpråk="Swedish" genre="Thriller" />
+  </Författare>
+  <Författare Namn="Mimi Pappas" Land="USA">
+    <Bok Titel="Music Now and Before" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Marie Franksson" Land="Sweden">
+    <Bok Titel="Våren vid sjön" OriginalSpråk="Swedish" genre="Novel" />
+    <Bok Titel="Midsommar i Lund" OriginalSpråk="Swedish" genre="Novel" />
+  </Författare>
+  <Författare Namn="Pierre Zargone" Land="Belgium">
+    <Bok Titel="Encore une fois" OriginalSpråk="French" />
+  </Författare>
+  <Författare Namn="Carl George" Land="France">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Peter Feldon" Land="England">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Lilian Carrera" Land="Spain">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Auna Gonzales Perre" Land="Portugal">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Kostas Andrianos" Land="Greece">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Andreas Shultz" Land="Austria">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Antje Liedderman" Land="Germany">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Christina Ohlsen" Land="Norway">
+    <Bok Titel="European History" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Sam Davis" Land="Mexiko">
+    <Bok Titel="Musical Instruments" OriginalSpråk="English" genre="Educational" />
+    <Bok Titel="Music Now and Before" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Alicia Bing" Land="Belgium">
+    <Bok Titel="Musical Instruments" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Linda Evans" Land="USA">
+    <Bok Titel="Oceans on Earth" OriginalSpråk="English" genre="Educational" />
+    <Bok Titel="Oceanography for Dummies" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Chuck Morrisson" Land="England">
+    <Bok Titel="Oceans on Earth" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="Kay Morrisson" Land="England">
+    <Bok Titel="Oceans on Earth" OriginalSpråk="English" genre="Educational" />
+  </Författare>
+  <Författare Namn="James Patterson" Land="USA">
+    <Bok Titel="The Beach House" OriginalSpråk="English" genre="Novel" />
+  </Författare>
+  <Författare Namn="Peter de Jonge" Land="USA">
+    <Bok Titel="The Beach House" OriginalSpråk="English" genre="Novel" />
+  </Författare>
+  <Författare Namn="Franc Desteille" Land="France">
+    <Bok Titel="Le chateau de mon pere" OriginalSpråk="French" />
+  </Författare>
+</Alla>
