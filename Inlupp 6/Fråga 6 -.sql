@@ -1,12 +1,14 @@
-SELECT title AS "Titel", Originallanguage AS "Original språk", Genre, 
-	   countEd AS "Antal upplagor",(countLang + 1) AS "antal språk", 
+SELECT title AS "Titel", Originallanguage AS "Original språk", COALESCE(genre, 'N/A') AS "Genre", 
+	   countEd AS "Antal upplagor",(COALESCE(countLang, 0) + 1) AS "Antal språk", 
 	   countAuthor AS "Antal författare", years AS "Tidigaste upplagan"
-FROM book,
-	(SELECT count(*) as countEd, book FROM book  INNER JOIN edition ON book.id = edition.book group by book) as editions,
-	(SELECT count(*) as countAuthor, book FROM  authorship INNER JOIN book ON authorship.book = book.id group by book) as authors,
-	(SELECT count(*) as countLang, book, MIN(year) as years
+FROM 
+	(SELECT count(*) as countEd, MIN(year) as years, book FROM EDITION group by book) as editions,
+	(SELECT count(*) as countAuthor, book FROM Authorship group by book) as authors,
+book left outer join
+	(SELECT count(*) as countLang, book
 	 FROM
-		(SELECT distinct  book, c.value('@Language', 'varchar(20)') AS Lang, year 
+		(SELECT distinct  book, c.value('@Language', 'varchar(20)') AS Lang
 		FROM edition CROSS APPLY Translations.nodes('//Translation') AS X(c)) as Bok
 		group by book) as langEd
-where book.id = editions.book AND book.id = authors.book AND book.id = langEd.book
+		on langEd.book = book.id
+where book.id = editions.book AND book.id = authors.book

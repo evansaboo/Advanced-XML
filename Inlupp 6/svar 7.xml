@@ -1,0 +1,67 @@
+<Resultat>
+  <Förlag Namn="ABC International" Land="Germany">
+    <Språk>Portuguese</Språk>
+    <Språk>Danish</Språk>
+    <Språk>Chinese</Språk>
+    <Språk>German</Språk>
+    <Språk>Russian</Språk>
+    <Språk>French</Språk>
+    <Språk>Dutch</Språk>
+    <Språk>Spanish</Språk>
+    <Språk>Italian</Språk>
+  </Förlag>
+  <Förlag Namn="Addison" Land="France">
+    <Språk>Russian</Språk>
+    <Språk>French</Språk>
+  </Förlag>
+  <Förlag Namn="Aurora Publ." Land="Italy">
+    <Språk>Italian</Språk>
+  </Förlag>
+  <Förlag Namn="Benton Inc" Land="England">
+    <Språk>English</Språk>
+  </Förlag>
+  <Förlag Namn="Bästa Bok" Land="Sweden">
+    <Språk>Swedish</Språk>
+  </Förlag>
+  <Förlag Namn="EU Publishing" Land="Belgium">
+    <Språk>Portuguese</Språk>
+    <Språk>Danish</Språk>
+    <Språk>Russian</Språk>
+    <Språk>French</Språk>
+    <Språk>Bulgarian</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Dutch</Språk>
+    <Språk>Spanish</Språk>
+    <Språk>Norwegian</Språk>
+    <Språk>Finnish</Språk>
+    <Språk>Italian</Språk>
+    <Språk>Greek</Språk>
+  </Förlag>
+  <Förlag Namn="Kingsly" Land="Austria">
+    <Språk>German</Språk>
+  </Förlag>
+  <Förlag Namn="KLC" Land="Sweden">
+    <Språk>French</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Norwegian</Språk>
+    <Språk>Italian</Språk>
+  </Förlag>
+  <Förlag Namn="Pels And Jafs" Land="Scotland">
+    <Språk>English</Språk>
+  </Förlag>
+  <Förlag Namn="RP" Land="Russia">
+    <Språk>Russian</Språk>
+  </Förlag>
+  <Förlag Namn="SCB" Land="Sweden">
+    <Språk>Swedish</Språk>
+  </Förlag>
+  <Förlag Namn="Shou-Ling" Land="China">
+    <Språk>Chinese</Språk>
+  </Förlag>
+  <Förlag Namn="Suomi Bookkii" Land="Finland">
+    <Språk>Finnish</Språk>
+  </Förlag>
+  <Förlag Namn="Turk And Turk" Land="Turkey">
+    <Språk>Turkish</Språk>
+  </Förlag>
+</Resultat>
