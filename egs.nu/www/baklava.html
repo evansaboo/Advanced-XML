@@ -46,12 +46,11 @@ body {
 
 .style11 {
 	font-size: 10px;
-	font-family: Arial, Helvetica, sans-serif;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	color: #FFFFFF;
 }
-.style12 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
+.style12 {color: #FFFFFF; font-size: 13px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
 a:visited {
 	text-decoration: none;
 }
@@ -59,7 +58,8 @@ a:active {
 	text-decoration: underline;
 }
 .style13 {color: #FFFFFF}
-.style15 {color: #FFFFFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
+.style15 {color: #FFFFFF;  
+font-size: 30px;  font-weight: bold; }
 -->
     </style>
 <script type="text/JavaScript">
@@ -70,6 +70,18 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 //-->
+</script>
+
+<link rel="stylesheet" href="slider/blueberry.css" />
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="slider/jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
 </script>
 </head>
 
@@ -93,7 +105,11 @@ function MM_preloadImages() { //v3.0
 	<td align="center">
 		<nav>
 			<ul class="cf">
-				<li><a href="hem.html">Hem</a></li>
+				<li><a class="dropdown" href="hem.html">Hem</a>
+				<ul>
+					<li><a href="baklava.html">Baklava & Nötter</a></li>
+				</ul>
+				</li>
 				<li><a href="galleri3.html">Galleri</a></li>
 				<li><a href="outletsida/outlet.html">Outlet</a></li>
 				<li><a href="fragor.html">Frågor & Svar</a></li>
@@ -113,7 +129,7 @@ function MM_preloadImages() { //v3.0
     <td>&nbsp;</td>
   </tr>
   <td>&nbsp;</td>
-    <td height="47" background="bgmain2.png"><span class="style15">Välkommen till butiken där allt är sött och gott!</span></td>
+    <td height="47" style="text-align:center;" background="bgmain2.png"><span class="style15">Välkommen till butiken där allt är sött och gott!</span></td>
     <td>&nbsp;</td>
   </tr><tr>
     <td>&nbsp;</td>
@@ -124,15 +140,26 @@ function MM_preloadImages() { //v3.0
 		  <tr>
 		    <td width="52%" height="398" valign="top">
 			<div class="center">
-			<div class="slider">
-                <ul class="items">
-                    <li><img src="sliderbild/slider-1.jpg" alt="" /><div class="banner"></div></li>
-                    <li><img src="sliderbild/slider-2.jpg" alt="" /><div class="banner"></div></li>
-                    <li><img src="sliderbild/slider-3.jpg" alt="" /><div class="banner"></div></li>
-					<li><img src="sliderbild/slider-4.jpg" alt="" /><div class="banner"></div></li>
-					<li><img src="sliderbild/slider-5.jpg" alt="" /><div class="banner"></div></li>
-                </ul>
-            </div></div>			</td>
+				<div id="doc">
+				  <div id="content">
+
+				<!-- blueberry -->
+
+					<div class="blueberry">
+					  <ul class="slides">
+						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide1.jpg" /></li>
+						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide2.jpg" /></li>
+						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide3.jpg" /></li>
+						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide4.jpg" /></li>
+					  </ul>
+					</div>
+
+				<!-- blueberry -->
+
+				  </div>
+				</div>
+            </div>			
+			</td>
               </tr>
 		  </table>          </td></tr>
     </table></td>

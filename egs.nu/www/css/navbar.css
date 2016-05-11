@@ -1,5 +1,4 @@
 ﻿nav ul {
-
 	-webkit-font-smoothing:antialiased;
     list-style: none;
     margin: 0;
@@ -14,11 +13,11 @@ nav li {
     min-width: 16.66%;
 }
 nav a {
- 
     color: #fff;
     display: block;
-    font: bold 16px/40px sans-serif;
-    padding: 0 25px;
+    font: bold 17px/40px GeosansLight;
+    letter-spacing:0.05em;
+    padding: 0 20px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .25s ease;
@@ -34,7 +33,7 @@ nav .dropdown:hover:after{
 	content:' \25BC'
 }
 nav li:hover a {
-    background: #fff;
+    background-color: #fff;
 	    text-decoration: none;
 		color: #000;
 }
@@ -60,6 +59,9 @@ nav li:hover ul {
 nav li ul li {
     float: none;
     width: 100%;
+}
+nav li ul li a{
+	    font: bold 14px/40px GeosansLight;
 }
 nav li ul a:hover {
     background: #bbb;
