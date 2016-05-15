@@ -1,13 +1,13 @@
 <Resultat>
   <Förlag Namn="ABC International" Land="Germany">
-    <Språk>Portuguese</Språk>
-    <Språk>Danish</Språk>
-    <Språk>Chinese</Språk>
-    <Språk>German</Språk>
     <Språk>Russian</Språk>
+    <Språk>Chinese</Språk>
     <Språk>French</Språk>
     <Språk>Dutch</Språk>
     <Språk>Spanish</Språk>
+    <Språk>Portuguese</Språk>
+    <Språk>German</Språk>
+    <Språk>Danish</Språk>
     <Språk>Italian</Språk>
   </Förlag>
   <Förlag Namn="Addison" Land="France">
@@ -17,33 +17,33 @@
   <Förlag Namn="Aurora Publ." Land="Italy">
     <Språk>Italian</Språk>
   </Förlag>
-  <Förlag Namn="Benton Inc" Land="England">
-    <Språk>English</Språk>
-  </Förlag>
   <Förlag Namn="Bästa Bok" Land="Sweden">
     <Språk>Swedish</Språk>
   </Förlag>
+  <Förlag Namn="Benton Inc" Land="England">
+    <Språk>English</Språk>
+  </Förlag>
   <Förlag Namn="EU Publishing" Land="Belgium">
-    <Språk>Portuguese</Språk>
-    <Språk>Danish</Språk>
-    <Språk>Russian</Språk>
-    <Språk>French</Språk>
-    <Språk>Bulgarian</Språk>
     <Språk>Swedish</Språk>
+    <Språk>Greek</Språk>
+    <Språk>Russian</Språk>
+    <Språk>Norwegian</Språk>
+    <Språk>French</Språk>
+    <Språk>Finnish</Språk>
     <Språk>Dutch</Språk>
     <Språk>Spanish</Språk>
-    <Språk>Norwegian</Språk>
-    <Språk>Finnish</Språk>
+    <Språk>Portuguese</Språk>
+    <Språk>Danish</Språk>
     <Språk>Italian</Språk>
-    <Språk>Greek</Språk>
+    <Språk>Bulgarian</Språk>
   </Förlag>
   <Förlag Namn="Kingsly" Land="Austria">
     <Språk>German</Språk>
   </Förlag>
   <Förlag Namn="KLC" Land="Sweden">
-    <Språk>French</Språk>
     <Språk>Swedish</Språk>
     <Språk>Norwegian</Språk>
+    <Språk>French</Språk>
     <Språk>Italian</Språk>
   </Förlag>
   <Förlag Namn="Pels And Jafs" Land="Scotland">

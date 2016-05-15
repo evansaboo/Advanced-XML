@@ -1,10 +1,10 @@
 <Resultat>
-  <Book Titel="Archeology in Egypt" />
-  <Book Titel="Database Systems in Practice" />
-  <Book Titel="Våren vid sjön" />
-  <Book Titel="Music Now and Before" />
-  <Book Titel="Encore une fois" />
-  <Book Titel="Musical Instruments" />
-  <Book Titel="Oceans on Earth" />
-  <Book Titel="Oceanography for Dummies" />
+  <Bok Titel="Archeology in Egypt" />
+  <Bok Titel="Database Systems in Practice" />
+  <Bok Titel="Våren vid sjön" />
+  <Bok Titel="Music Now and Before" />
+  <Bok Titel="Encore une fois" />
+  <Bok Titel="Musical Instruments" />
+  <Bok Titel="Oceans on Earth" />
+  <Bok Titel="Oceanography for Dummies" />
 </Resultat>
