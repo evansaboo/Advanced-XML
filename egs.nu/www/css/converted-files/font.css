@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'ExpresswayRg-Regular';
+  src: url('ExpresswayRg-Regular.woff') format('woff'),
+       url('ExpresswayRg-Regular.ttf') format('truetype'),
+       url('ExpresswayRg-Regular.svg#ExpresswayRg-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'expresswayrg';
+  src: url('expresswayrg.eot');
+  src: url('expresswayrg.woff2') format('woff2'),
+       url('expresswayrg.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -38,7 +38,8 @@ $(document).ready(function(){
 
     <style type="text/css">
 <!--
-
+           /* This rule is read by Galleria to define the gallery height: */
+            .galleria{height:600px}
 body {
 	background-image: url(bg2.jpg);
 	background-repeat: repeat-y;
@@ -59,7 +60,15 @@ a:active {
 }
 .style13 {color: #FFFFFF}
 .style15 {color: #FFFFFF;  
-font-size: 30px;  font-weight: bold; }
+font-size: 30px;  font-weight: bold;}
+.style11 img{
+width: 11px;
+hegiht: 11px;
+}
+.style11 a{
+color: #fff;
+text-decoration: none;
+}
 -->
     </style>
 <script type="text/JavaScript">
@@ -72,17 +81,13 @@ function MM_preloadImages() { //v3.0
 //-->
 </script>
 
-<link rel="stylesheet" href="slider/blueberry.css" />
+        <!-- load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="slider/galleria-1.4.2.min.js"></script>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="slider/jquery.blueberry.js"></script>
-
-<script>
-$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
 </head>
 
 <body bgcolor="#000000">
@@ -129,7 +134,7 @@ $(window).load(function() {
     <td>&nbsp;</td>
   </tr>
   <td>&nbsp;</td>
-    <td height="47" style="text-align:center;" background="bgmain2.png"><span class="style15">Välkommen till butiken där allt är sött och gott!</span></td>
+    <td height="47" style="text-align:center; padding: 10px;" background="bgmain2.png"><span class="style15">Välkommen till butiken där allt är sött och gott!</span></td>
     <td>&nbsp;</td>
   </tr><tr>
     <td>&nbsp;</td>
@@ -142,26 +147,49 @@ $(window).load(function() {
 			<div class="center">
 				<div id="doc">
 				  <div id="content">
+				  	 <script>
 
-				<!-- blueberry -->
+						// Load the classic theme
+						Galleria.loadTheme('slider/galleria.classic.min.js');
 
-					<div class="blueberry">
-					  <ul class="slides">
-						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide1.jpg" /></li>
-						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide2.jpg" /></li>
-						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide3.jpg" /></li>
-						<li><img src="http://marktyrrell.com/labs/blueberry/img/slide4.jpg" /></li>
-					  </ul>
-					</div>
+						// Initialize Galleria
+						Galleria.run('.galleria',{
+						autoplay: 3500 // will move forward every 3.5 seconds
+						}
+						);
 
-				<!-- blueberry -->
+						</script>
+				</div>  
+					<div class="galleria">
+						<img src="Baklava_pics/Baklava_6.jpg"/>
+						<img src="Baklava_pics/Baklava_7.jpg"/>
+						<img src="Baklava_pics/Baklava_1.jpg"/>
+						<img src="Baklava_pics/Baklava_2.jpg"/>
+						<img src="Baklava_pics/Baklava_3.jpg"/>
+						<img src="Baklava_pics/Baklava_4.jpg"/>
+						<img src="Baklava_pics/Baklava_5.jpg"/>
+						<img src="Baklava_pics/Baklava_8.jpg"/>
+						<img src="Baklava_pics/Baklava_9.jpg"/>
+						<img src="Baklava_pics/Baklava_10.jpg"/>
+						<img src="Baklava_pics/Baklava_11.jpg"/>
+						<img src="Baklava_pics/Baklava_12.jpg"/>
+						<img src="Baklava_pics/Baklava_13.jpg"/>
+						<img src="Baklava_pics/Baklava_14.jpg"/>
+						<img src="Baklava_pics/Baklava_15.jpg"/>
+						<img src="Baklava_pics/Baklava_18.jpg"/>
+						<img src="Baklava_pics/Baklava_19.jpg"/>
+						<img src="Baklava_pics/Baklava_16.jpg"/>
+						<img src="Baklava_pics/Baklava_20.jpg"/>
+						<img src="Baklava_pics/Baklava_21.jpg"/>
+						<img src="Baklava_pics/Baklava_17.jpg"/>
+						</div>
 
 				  </div>
-				</div>
             </div>			
 			</td>
               </tr>
-		  </table>          </td></tr>
+		  </table>          
+		  </td></tr>
     </table></td>
     <td>&nbsp;</td>
   </tr>
@@ -172,13 +200,6 @@ $(window).load(function() {
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td height="167" background="bgmain2.png"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="32%" height="236" valign="top"><a href="hem.html"><img src="erbjudanden.png" width="300" height="240" border="0" align="top" /></a></td>
-        <td width="34%" valign="top"><a href="galleri3.html"><img src="fotoalbum.png" width="300" height="240" border="0" /></a></td>
-        <td width="34%"><a href="hitta.html"><img src="hitta.png" width="300" height="240" border="0" /></a></td>
-      </tr>
-    </table></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -192,9 +213,9 @@ $(window).load(function() {
     <td background="bgmeny1.png"></td>
   </tr>
   <tr>
-    <td></td>
-    <td height="10" class="style11"><div align="center">&Ouml;ppet alla dagar 09-20 | Segersbyv&auml;gen 20 ,145 63 Norsborg | +46 (0)8-53188020</div></td>
-    <td><span class="style11">Copyright 2012 &copy; EG&acute;s Fyndmarknad </span> </td>
+    <td  style="text-align: right;"><span class="style11"><a href="https://www.instagram.com/egsfyndmarknad/" target="_blank">Följ oss på: EGs   <img src="insta_pic_1.png"/> </a>  | <a href="https://www.instagram.com/botkyrkaoutlet/" target="_blank">Outlet   <img src="insta_pic_1.png"/></a></span></td>
+    <td height="10" class="style11"><div align="center">&Ouml;ppet alla dagar 09-20 | Segersbyv&auml;gen 20, 145 63 Norsborg | +46 (0)8-53188020</div></td>
+    <td><span class="style11">Copyright 2016 &copy; EG&acute;s Fyndmarknad </span> </td>
   </tr>
 </table>
 </body>

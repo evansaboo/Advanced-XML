@@ -2,7 +2,8 @@
 
 @font-face {
     font-family: GeosansLight;
-    src:  url(expresswayrg.ttf);
+    src:  url(expresswayrg.ttf) format('truetype'),
+	  url(expresswayrg-Regular.woff) format('woff');
 }
 /*Google maps css*/
 
@@ -186,3 +187,34 @@ a {
 a:active { outline:none; }
 applet,object,iframe,blockquote,pr,abbr,acronym,address,big,cite,code,del,dfn,em,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,fieldset,form { margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline; }
 .center{ margin:0 auto; width:950px;}
+
+
+
+.style11 {
+	font-size: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+}
+.style12 {color: #FFFFFF; font-size: 13px; padding-right: 0px; padding-left: 10px; padding-bottom: 5px; font-weight: bold; }
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: underline;
+}
+.style13 {color: #FFFFFF}
+.style15 {color: #FFFFFF;  
+font-size: 30px;  font-weight: bold;}
+.style11 img{
+width: 11px;
+hegiht: 11px;
+}
+.style11 a{
+color: #fff;
+text-decoration: none;
+}
+.style11 a:link{
+  text-decoration: none!important;
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@ SELECT title AS "Titel", Originallanguage AS "Original språk", COALESCE(genre, '
 FROM 
 	(SELECT count(*) as countEd, MIN(year) as years, book FROM EDITION group by book) as editions,
 	(SELECT count(*) as countAuthor, book FROM Authorship group by book) as authors,
-book left outer join
+	book left outer join
 	(SELECT count(*) as countLang, book
 	 FROM
 		(SELECT DISTINCT Lang, book

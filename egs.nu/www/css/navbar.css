@@ -1,4 +1,5 @@
 ﻿nav ul {
+
 	-webkit-font-smoothing:antialiased;
     list-style: none;
     margin: 0;
@@ -13,11 +14,12 @@ nav li {
     min-width: 16.66%;
 }
 nav a {
+font: GeosansLight;
     color: #fff;
     display: block;
     font: bold 17px/40px GeosansLight;
     letter-spacing:0.05em;
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .25s ease;
