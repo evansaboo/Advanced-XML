@@ -2,8 +2,11 @@
 
 @font-face {
     font-family: GeosansLight;
-    src:  url(expresswayrg.ttf) format('truetype'),
-	  url(expresswayrg-Regular.woff) format('woff');
+    src:  url(font/expresswayrg.ttf) format('truetype'),
+	  url(font/expresswayrg.woff) format('woff');
+	  url(font/expresswayrg.woff2) format('woff2');
+	  url('font/expresswayrg.eot') format('embedded-opentype');
+	  url(font/expresswayrg.svg) format('svg');
 }
 /*Google maps css*/
 
@@ -217,4 +220,8 @@ text-decoration: none;
 .style11 a:link{
   text-decoration: none!important;
   cursor: pointer;
+}
+.style11 a:hover{
+color: #585858;
+text-decoration: none;
 }

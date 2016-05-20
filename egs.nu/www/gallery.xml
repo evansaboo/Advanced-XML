@@ -5,7 +5,7 @@
 	useFlickr="false"
 	resizeOnImport="true"
 	cropToFit="false"
-	thumbColumns="10"
+	thumbColumns="5"
 	thumbRows="1"
 	thumbPosition="BOTTOM"
 	frameWidth="15"

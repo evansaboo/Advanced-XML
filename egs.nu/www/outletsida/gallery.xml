@@ -14,7 +14,7 @@
 	thumbQuality="90"
 	thumbPosition="BOTTOM"
 	thumbRows="1"
-	thumbColumns="10"
+	thumbColumns="5"
 	showFullscreenButton="true"
 	galleryStyle="MODERN"
 	useFlash="true"
