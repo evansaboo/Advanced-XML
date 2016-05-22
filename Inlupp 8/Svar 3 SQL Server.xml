@@ -1,0 +1,48 @@
+<Resultat>
+  <Genre namn="Ingen genre" antalböcker="2">
+    <Språk>English</Språk>
+    <Språk>Greek</Språk>
+    <Språk>Russian</Språk>
+    <Språk>Norwegian</Språk>
+    <Språk>French</Språk>
+    <Språk>Spanish</Språk>
+    <Språk>German</Språk>
+    <Språk>Italian</Språk>
+  </Genre>
+  <Genre namn="Educational" antalböcker="7">
+    <Språk>English</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Greek</Språk>
+    <Språk>Russian</Språk>
+    <Språk>Chinese</Språk>
+    <Språk>Norwegian</Språk>
+    <Språk>French</Språk>
+    <Språk>Finnish</Språk>
+    <Språk>Dutch</Språk>
+    <Språk>Spanish</Språk>
+    <Språk>Portuguese</Språk>
+    <Språk>German</Språk>
+    <Språk>Danish</Språk>
+    <Språk>Italian</Språk>
+    <Språk>Bulgarian</Språk>
+    <Språk>Turkish</Språk>
+  </Genre>
+  <Genre namn="Novel" antalböcker="3">
+    <Språk>English</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Finnish</Språk>
+  </Genre>
+  <Genre namn="Science Fiction" antalböcker="2">
+    <Språk>English</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Russian</Språk>
+    <Språk>German</Språk>
+  </Genre>
+  <Genre namn="Thriller" antalböcker="2">
+    <Språk>English</Språk>
+    <Språk>Swedish</Språk>
+    <Språk>Russian</Språk>
+    <Språk>French</Språk>
+    <Språk>German</Språk>
+  </Genre>
+</Resultat>

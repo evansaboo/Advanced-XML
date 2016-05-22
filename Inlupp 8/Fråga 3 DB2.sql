@@ -8,7 +8,7 @@ FROM
 		       (SELECT COUNT(*) 
 		        FROM BOOK 
 		        WHERE COALESCE(book.Genre, '0') = COALESCE(b.Genre, '0')) as antalböcker, 
-		       Lang as Langs
+		        Lang as Langs
 		FROM Edition INNER JOIN BOOK as b ON b.id = Edition.book,
 						XMLTABLE('$Info//Translation' Passing Translations AS "Info"
 				      	COLUMNS

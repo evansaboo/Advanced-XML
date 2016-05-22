@@ -1,9 +1,9 @@
 element Länder{
   let $Pdoc := doc("C:/Users/Evan/Documents/GitHub/Avancerad-XML/Inlupp 2/Publishers.xml")
-  for $alla in distinct-values(//@Country union $Pdoc//Country )
+  for $alla in distinct-values(//@Country union $Pdoc//Country)
   return element Land{attribute namn{$alla},
                       (for $pub in $Pdoc//Publisher[.//Country = $alla]
                       return element Förlag{attribute namn{$pub/@Name}}),
-                      (for $author in //Author[@Country = $alla]
-                      return element Författare{attribute namn{$author/@Name}})}
+                      (for $author in distinct-values(//Author[@Country = $alla]/@Name)
+                      return element Författare{attribute namn{$author}})}
 }
