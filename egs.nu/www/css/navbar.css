@@ -16,9 +16,10 @@ nav li {
 nav a {
     color: #fff;
     display: block;
-    font: bold 17px/40px GeosansLight;
+    font-size: 16px;
+	font-weight: bold;
     letter-spacing:0.05em;
-    padding: 0 10px;
+    padding: 10.2px 3px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all .25s ease;
